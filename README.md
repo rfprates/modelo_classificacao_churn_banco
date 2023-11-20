@@ -235,23 +235,41 @@ Pelo resultado acima, a quantidade de verdadeiros positivos previstos pelo model
 
 - Métricas de performance:
 
-Acurácia Treino: 1.0
-Acurácia Teste: 0.935
-
-Acurácia Balanceada Treino: 1.0
-Acurácia Balanceada Teste: 0.884
-
-Precisão Treino: 1.0
-Precisão Teste: 0.963
-
-Recall Treino: 1.0
-Recall Teste: 0.959
-
-F1 Treino: 1.0
-F1 Teste: 0.961
-
-ROCAUC Treino: 1.0
-ROCAUC Teste: 0.884
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Acurácia</th>
+      <th>Acurácia Balanceada</th>
+      <th>Precisão</th>
+      <th>Recall</th>
+      <th>F1</th>
+      <th>ROCAUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Treino</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>Teste</th>
+      <td>0.933176</td>
+      <td>0.881561</td>
+      <td>0.962211</td>
+      <td>0.957889</td>
+      <td>0.960045</td>
+      <td>0.881561</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 Avaliando os resultados das métricas acima, percebe-se claramente que para este modelo Decision Tree Classifier, temos um caso de Overfitting, onde as métricas da base de treino são iguais 1. Isto acontece quando o modelo de machine learning "decora" a base de treino, acertando praticamente tudo, mas quando é passada uma nova base diferente, o modelo se perde em suas previsões. Portanto, será necessária uma otimização de hiperparâmetros para tentar corrigir este problema.
 
@@ -263,23 +281,41 @@ Neste projeto, utilizou-se como métrica de seleção a Acurácia, com um cross-
 
 - Novas métricas de performance com o modelo otimizado:
 
-Acurácia Treino: 0.973
-Acurácia Teste: 0.941
-
-Acurácia Balanceada Treino: 0.944
-Acurácia Balanceada Teste: 0.893
-
-Precisão Treino: 0.982
-Precisão Teste: 0.966
-
-Recall Treino: 0.985
-Recall Teste: 0.964
-
-F1 Treino: 0.984
-F1 Teste: 0.965
-
-ROCAUC Treino: 0.989
-ROCAUC Teste: 0.916
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Acurácia</th>
+      <th>Acurácia Balanceada</th>
+      <th>Precisão</th>
+      <th>Recall</th>
+      <th>F1</th>
+      <th>ROCAUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Treino</th>
+      <td>0.981840</td>
+      <td>0.956875</td>
+      <td>0.985542</td>
+      <td>0.993074</td>
+      <td>0.989293</td>
+      <td>0.992444</td>
+    </tr>
+    <tr>
+      <th>Teste</th>
+      <td>0.932706</td>
+      <td>0.874243</td>
+      <td>0.959081</td>
+      <td>0.960696</td>
+      <td>0.959888</td>
+      <td>0.897428</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 Com a otimização dos hiperparâmetros, já é possível perceber que o problema de Overfitting foi corrigido, com métricas da base de treino e teste muito mais próximas uma da outra e métricas de treino inferiores a 1. O modelo escolhido e definido acima apresentou excelentes métricas, com uma acurácia de teste superior a 94%, precisão, recall e f1 acima dos 96%, e um roc score maior que 91%.
 
