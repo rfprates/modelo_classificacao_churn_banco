@@ -1,4 +1,4 @@
-# Case - Definindo um modelo de machine learning para prever casos de churn em uma instuição financeira
+# Case - Definindo um modelo de machine learning para prever casos de churn em uma instituição financeira
 
 ## Introdução
 
