@@ -94,19 +94,6 @@ Observando este gráfico dos cartões, a maioria esmagadora dos clientes tem o c
 Para obter-se mais insights a respeito destas categorias de cartões, exibi-se abaixo a quantidade de clientes que tem cada categoria, subdividindo-os pela renda.
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -168,19 +155,6 @@ Avaliando-se a tabela acima, a maior parte dos clientes que tem o cartão "Blue"
 Exibindo-se abaixo os dados de churn por categoria de cartão.
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
